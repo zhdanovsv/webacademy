@@ -1,0 +1,140 @@
+@font-face 
+	font-family: "MullerBold" 
+  src: url(../fonts/MullerBold.otf)
+
+@font-face
+	font-family: "MullerRegular"
+  src: url(../fonts/MullerRegular.otf)
+
+@font-face
+	font-family: "MullerExtraBold"
+  src: url(../fonts/MullerExtraBold.otf)
+
+@font-face
+	font-family: "MullerMedium"
+  src: url(../fonts/MullerMedium.otf)
+
+body
+	background: url('../img/slice.png')
+	margin: 0
+	padding: 0
+	font-family: "MullerRegular", sans-serif
+
+/********************* FOR DESKTOP *********************/
+
+.container
+	width: 921px
+	margin: auto
+	text-align: center
+
+
+.wrapper 
+	margin-top: 54px
+
+.title
+	margin-top: 101px
+	&-heading
+		margin-bottom: 45px
+		color: #6c1c02
+		font-family: "MullerBold"
+		font-size: 30px
+		font-weight: 400
+		line-height: 44px
+	span &-intro
+		font-family: "MullerRegular"
+		font-size: 18px
+		font-weight: 400
+		line-height: 24px
+
+	&-heading__bold1 
+		font-family: "MullerBold"
+		font-weight: 700
+
+	&-heading__bold2 
+		font-family: "MullerExtraBold"
+		font-weight: 700
+
+.box
+	background: #fff
+	width: 271px
+	height: 462px
+	padding-top: 40px
+	float: left
+	margin: 0 49px 50px 0
+	box-shadow: 0 9px 21px rgba(0, 0, 0, 0.05)
+
+	&-img
+		width: 158px
+	  height: 336px
+	  margin: auto
+	&-desc
+		color: #393939
+		font-family: "MullerRegular"
+		font-size: 16px
+		font-weight: 400
+		padding: 25px 0 32px
+		&__double
+			padding-bottom: 15px
+			span
+				color: #7f7f7f
+				font-family: "MullerRegular"
+				font-size: 14px
+	&-price
+		color: #393939
+		font-family: "MullerMedium"
+		font-size: 18px
+		font-weight: 400
+		&__bold 
+			font-family: "MullerBold"
+			font-size: 20px
+			font-weight: 700
+
+.button
+	background: #e70000
+	border: 0
+	outline: none
+	padding: 29px 48px
+	margin-bottom: 98px
+	color: #fff
+	font-family: "MullerBold"
+	font-size: 18px
+	font-weight: 400
+	line-height: 44px
+	box-shadow: 0 9px 21px rgba(0, 0, 0, 0.15)
+
+// @media screen (max-width: 960px)
+	.box:nth-child(3n+3)
+		margin-right: 0
+
+
+/********************* FOR TABLET *********************/
+// @media screen and (max-width: 960px) {
+// 		.container	{
+// 			width: 591px;
+// 		}
+
+// 		.box:nth-child(2n+2) {
+// 			margin-right: 0;
+// 		}
+
+// }
+
+
+/********************* Для MOBILE *********************/
+// @media only screen and (min-device-width: 320px) and (max-device-width: 650px) {
+// 		.container	{
+// 			width: 271px;
+// 		}
+
+// 		.box {
+// 			margin-bottom: 50px;
+// 		}
+// 		.box:nth-child(n) {
+// 			margin-right: 0px;
+// 		}
+
+// 		.button {
+// 			line-height: 24px;
+// 		}
+
+// }

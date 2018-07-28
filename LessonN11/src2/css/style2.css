@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "MullerBold";
+    font-family-src: url(../fonts/MullerBold.otf); }
+
+@font-face {
+  font-family: "MullerRegular";
+    font-family-src: url(../fonts/MullerRegular.otf); }
+
+@font-face {
+  font-family: "MullerExtraBold";
+    font-family-src: url(../fonts/MullerExtraBold.otf); }
+
+@font-face {
+  font-family: "MullerMedium";
+    font-family-src: url(../fonts/MullerMedium.otf); }
+
+body {
+  background: url("../img/slice.png");
+  margin: 0;
+  padding: 0;
+  font-family: "MullerRegular", sans-serif; }
+
+/********************* FOR DESKTOP *********************/
+.container {
+  width: 921px;
+  margin: auto;
+  text-align: center; }
+
+.wrapper {
+  margin-top: 54px; }
+
+.title {
+  margin-top: 101px; }
+  .title-heading {
+    margin-bottom: 45px;
+    color: #6c1c02;
+    font-family: "MullerBold";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 44px; }
+  span .title-intro {
+    font-family: "MullerRegular";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px; }
+  .title-heading__bold1 {
+    font-family: "MullerBold";
+    font-weight: 700; }
+  .title-heading__bold2 {
+    font-family: "MullerExtraBold";
+    font-weight: 700; }
+
+.box {
+  background: #fff;
+  width: 271px;
+  height: 462px;
+  padding-top: 40px;
+  float: left;
+  margin: 0 49px 50px 0;
+  box-shadow: 0 9px 21px rgba(0, 0, 0, 0.05); }
+  .box-img {
+    width: 158px;
+      width-height: 336px;
+      width-margin: auto; }
+  .box-desc {
+    color: #393939;
+    font-family: "MullerRegular";
+    font-size: 16px;
+    font-weight: 400;
+    padding: 25px 0 32px; }
+    .box-desc__double {
+      padding-bottom: 15px; }
+      .box-desc__double span {
+        color: #7f7f7f;
+        font-family: "MullerRegular";
+        font-size: 14px; }
+  .box-price {
+    color: #393939;
+    font-family: "MullerMedium";
+    font-size: 18px;
+    font-weight: 400; }
+    .box-price__bold {
+      font-family: "MullerBold";
+      font-size: 20px;
+      font-weight: 700; }

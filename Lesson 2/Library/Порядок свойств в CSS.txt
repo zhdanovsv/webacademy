@@ -1,0 +1,44 @@
+При написании #id или .class какого-либо объекта
+необходимо придерживаться структурированной схемы его описания
+
+/* Позиционирование */
+
+   position: relative;
+   top: 0px;
+   left: 0px;
+   bottom: 0px;
+   right: 0px;
+   z-index: 100;
+
+/* Блочная модель */
+
+   display: block;
+   float: left;
+   width: 200px;
+   height: 100px;
+   margin
+   padding
+
+/* Типографика */
+
+   font: normal 13px/1.5 "Helvetika", sans-serif;
+   font-size
+   font-style
+   line-height: 1.6em;
+   font-family: "Helvetika", sans-serif;
+   text-align: center;
+
+/* Оформление */
+   
+   color: #ccc;
+   background-color: #FFF;
+   border: 1px solid #000;
+   border-radius: 3px;
+   opacity: 1;
+
+/* Анимация */
+
+   transition: all 0.8;
+
+/* Разное */
+   will-change: auto;

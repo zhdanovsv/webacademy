@@ -1,0 +1,99 @@
+@mixin font($size, $weight)
+	font-size: $size
+	font-weight: $weight
+@font-face
+	font-family: 'Muller Regular'
+	src:url('../fonts/MullerRegular.otf')
+@font-face
+	font-family: 'Muller Medium'
+	src:url('../fonts/MullerMedium.otf')
+@font-face
+	font-family: 'Muller Bold'
+	src:url('../fonts/MullerBold.otf')
+@font-face
+	font-family: 'Muller Extra Bold'
+	src:url('../fonts/MullerExtraBold.otf')
+
+
+body
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	text-align: center
+	// font-family: Muller Regular
+	background: url('../img/slice.png')
+	
+	header
+		margin-top: 101px
+	.wrapper
+		text-align: center
+    // height: 3000px
+    margin: 0 auto
+		.header-title
+			color: #6c1c02
+			font-family: 'Muller Bold'
+			@include font(30px, 400)
+			line-height: 44px
+			&__desc
+				color: #000000
+				line-height: 24px
+				font-family: 'Muller Regular'
+				@include font(18px, 400)
+				padding: 45px 0 54px
+				&1
+					font-family: 'Muller Bold'
+					@include font(18px, 700)
+				&2
+					font-family: 'Muller Extra Bold'
+					@include font(18px, 700)
+	.wrap-doors__box
+		margin: auto
+		width: 957px
+		&:after
+			content: ''
+			display: table
+			clear: both
+	.wrap-doors
+		background-color: #fff
+		margin: 0 25px 50px 25px
+		float: left
+		box-shadow: 0 9px 21px rgba(0, 0, 0, 0.05)
+		// &::after
+		// 	content: ''
+		// 	display: table
+		// 	clear: both
+		// &:nth-child(3)
+		// 	margin-right: 0
+		// &:nth-child(6)
+		// 	margin-right: 0
+		&__img
+			max-height: 327px
+			width: 158px
+			margin: 49px 52px 0px 59px
+		&__desc
+			color: #393939
+			font-family: 'Muller Regular'
+			@include font(16px, 400)
+			padding-top: 30px
+			&S
+				color: #7f7f7f
+				font-family: 'Muller Regular'
+				@include font(14px, 400)
+		&__price
+			color: #000
+			font-family: 'Muller Medium'
+			@include font(18px, 400)
+			padding: 32px 0 36px
+			&-S
+				padding: 15px 0 36px
+			&B
+				font-family: Muller Bold
+				@include font (20px, 700)
+.button
+	background-color: #e70000
+	color: #ffffff
+	font-family: "Muller Bold"
+	@include font(18px ,400)
+	// line-height: 44px
+	padding: 29px 48px
+	margin-bottom: 98px

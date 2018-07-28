@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+body {
+  background: url("../img/bg-img.jpg") no-repeat top center;
+}
+
+h1 {
+  text-align: center;
+  font-family: Montserrat,sans-serif;
+  color: #333;
+  margin: 50px 0;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 1080px;
+  height: 250px;
+  overflow: hidden;
+  margin: 10px auto;
+}
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 16.666%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 500ms ease;
+}
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.accordion ul li div a {
+  display: block;
+  border: 1px solid #aaa;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
+}
+.accordion ul li div a * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.accordion ul li div a h2 {
+  font-family: Montserrat,sans-serif;
+  text-overflow: clip;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 160px;
+}
+.accordion ul li div a p {
+  top: 160px;
+  font-size: 13.5px;
+}
+.accordion ul li:nth-child(1) {
+  background: #00dd33 url("../img/Icon/1.png") center no-repeat;
+}
+.accordion ul li:nth-child(2) {
+  background: #00dd33 url("../img/Icon/2.png") center no-repeat;
+
+}
+.accordion ul li:nth-child(3) {
+  background: #00dd33 url("../img/Icon/3.png") center no-repeat;
+
+}
+.accordion ul li:nth-child(4) {
+  background: #00dd33 url("../img/Icon/4.png") center no-repeat;
+
+}
+.accordion ul li:nth-child(5) {
+  background: #00dd33 url("../img/Icon/5.png") center no-repeat;
+
+}
+.accordion ul li:nth-child(6) {
+  background: #00dd33 url("../img/Icon/6.png") center no-repeat;
+
+}
+.accordion ul li:nth-child(7) {
+  background: #00dd33 url("../img/Icon/7.png") center no-repeat;
+
+}
+.accordion ul li:nth-child(8) {
+  background: #00dd33 url("../img/Icon/8.png") center no-repeat;
+}
+.accordion ul li:nth-child(9) {
+  background: #00dd33 url("../img/Icon/9.png") center no-repeat;
+}
+.accordion ul li:nth-child(10) {
+  background: #00dd33 url("../img/Icon/10.png") center no-repeat;
+}
+.accordion2 ul li:nth-child(1) {
+  background: #00dd33 url("../img/Icon/11.png") center no-repeat;
+}
+.accordion2 ul li:nth-child(2) {
+  background: #00dd33 url("../img/Icon/12.png") center no-repeat;
+}
+.accordion2 ul li:nth-child(3) {
+  background: #00dd33 url("../img/Icon/13.png") center no-repeat;
+}
+.accordion2 ul li:nth-child(4) {
+  background: #ff5555 url("../img/Icon/14.png") center no-repeat;
+}
+.accordion2 ul li:nth-child(5) {
+  background: #ff5555 url("../img/Icon/15.png") center no-repeat;
+}
+.accordion2 ul li:nth-child(6) {
+  background: #ff5555 url("../img/Icon/16.png") center no-repeat;
+}
+.accordion2 ul li:nth-child(7) {
+  background: #ff5555 url("../img/Icon/17.png") center no-repeat;
+}
+.accordion2 ul li:nth-child(8) {
+  background: #ff5555 url("../img/Icon/18.png") center no-repeat;
+}
+.accordion2 ul li:nth-child(9) {
+  background: #ff5555 url("../img/Icon/19.png") center no-repeat;
+}
+.accordion2 ul li:nth-child(10) {
+  background: #ff5555 url("../img/Icon/20.png") center no-repeat;
+}
+.accordion ul:hover li {
+  width: 8%;
+}
+.accordion ul:hover li:hover {
+  width: 60%;
+}
+.accordion ul:hover li:hover a {
+  background: rgba(0, 0, 0, 0.4);
+}
+.accordion ul:hover li:hover a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+
+  .accordion {
+    height: auto;
+  }
+  .accordion ul li, .accordion ul li:hover, .accordion ul:hover li, .accordion ul:hover li:hover {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+.about {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #666;
+}
+.about a {
+  color: blue;
+  text-decoration: none;
+}
+.about a:hover {
+  text-decoration: underline;
+}

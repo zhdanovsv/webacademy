@@ -1,0 +1,17 @@
+body {
+  background: #ccc; }
+
+header {
+  border: 1px solid blue;
+  border-radius: 5px;
+  width: 500px;
+  height: 300px; }
+  header h1 {
+    font-size: 32px;
+    font-width: 700;
+    font-color: #020202; }
+  header p {
+    color: #030303;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-width: 400; }

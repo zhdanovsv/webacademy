@@ -1,0 +1,154 @@
+body {
+	font-family: 'Tahoma', sans-serif;
+	color: 000;
+}
+
+button:focus {
+	outline: none;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	color: #333333;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 27px
+}
+
+.container {
+	width: 1140px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 77px 0 94px 0;
+
+}
+
+.header-img {
+	width: 45%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.header-desc {
+	width: 54%;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 60px;
+}
+
+.header-desc h1 {
+	color: #000000;
+	font-size: 48px;
+	font-weight: 700;
+	/*padding-top: 60px;*/
+	padding-bottom: 15px;
+}
+
+.header-desc__title {
+	display: inline-block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.header-desc__price {
+	display: inline-block;
+	padding-top: 47px;
+	color: #313131;
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 27px;
+}
+
+.header-desc p {
+	padding-top: 35px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
+	max-width: 526px;
+}
+
+.button, .button-o{
+	font-size: 24px;
+	font-weight: 700;
+	margin-top: 51px;
+	background-color: #f05a22;
+	border-radius: 5px;
+	color: #fff;
+	padding: 24px 43px;
+	line-height: 27px;
+	border: none;
+	outline: none; 
+}
+
+.button-o {
+	margin-left: 37px;
+	color: #f05a22;
+	background-color: transparent;
+	border: 2px solid #f05a22;
+}
+
+.delivery {
+	background-color: #f2f2f2;
+}
+
+.wrap-delivery {
+	width: 1075px;
+	padding-bottom: 101px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.delivery-title {
+	text-align: center;
+	margin-bottom: 90px;
+	padding-top: 90px;
+}
+
+.block-desc {
+	width: 24%;
+	display: inline-block;
+	text-align: center;
+}
+
+.block-desc:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.icon-img {
+	margin-bottom: 15px;
+}
+
+.icon-desc {
+	color: #333333;
+	font-family: "Open Sans";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.man-img {
+	margin-right:27px;
+}
+.man-img:last-child {
+	margin-right: 0;
+}
+
+.block-img {
+	width: 1141px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 35px;
+}
+
+.block-img-bot {
+	padding-bottom: 101px;
+}
+
+
+

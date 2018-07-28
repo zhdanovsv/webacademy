@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Muller Regular';
+  src: url("../fonts/MullerRegular.otf"); }
+
+@font-face {
+  font-family: 'Muller Medium';
+  src: url("../fonts/MullerMedium.otf"); }
+
+@font-face {
+  font-family: 'Muller Bold';
+  src: url("../fonts/MullerBold.otf"); }
+
+@font-face {
+  font-family: 'Muller Extra Bold';
+  src: url("../fonts/MullerExtraBold.otf"); }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  background: url("../img/slice.png"); }
+  body header {
+    margin-top: 101px; }
+  body .wrapper {
+    text-align: center;
+      text-align-margin: 0 auto; }
+    body .wrapper .header-title {
+      color: #6c1c02;
+      font-family: 'Muller Bold';
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 44px; }
+      body .wrapper .header-title__desc {
+        color: #000000;
+        line-height: 24px;
+        font-family: 'Muller Regular';
+        font-size: 18px;
+        font-weight: 400;
+        padding: 45px 0 54px; }
+        body .wrapper .header-title__desc1 {
+          font-family: 'Muller Bold';
+          font-size: 18px;
+          font-weight: 700; }
+        body .wrapper .header-title__desc2 {
+          font-family: 'Muller Extra Bold';
+          font-size: 18px;
+          font-weight: 700; }
+  body .wrap-doors__box {
+    margin: auto;
+    width: 957px; }
+    body .wrap-doors__box:after {
+      content: '';
+      display: table;
+      clear: both; }
+  body .wrap-doors {
+    background-color: #fff;
+    margin: 0 25px 50px 25px;
+    float: left;
+    box-shadow: 0 9px 21px rgba(0, 0, 0, 0.05); }
+    body .wrap-doors__img {
+      max-height: 327px;
+      width: 158px;
+      margin: 49px 52px 0px 59px; }
+    body .wrap-doors__desc {
+      color: #393939;
+      font-family: 'Muller Regular';
+      font-size: 16px;
+      font-weight: 400;
+      padding-top: 30px; }
+      body .wrap-doors__descS {
+        color: #7f7f7f;
+        font-family: 'Muller Regular';
+        font-size: 14px;
+        font-weight: 400; }
+    body .wrap-doors__price {
+      color: #000;
+      font-family: 'Muller Medium';
+      font-size: 18px;
+      font-weight: 400;
+      padding: 32px 0 36px; }
+      body .wrap-doors__price-S {
+        padding: 15px 0 36px; }
+      body .wrap-doors__priceB {
+        font-family: Muller Bold;
+        font-size: 20px;
+        font-weight: 700; }
+
+.button {
+  background-color: #e70000;
+  color: #ffffff;
+  font-family: "Muller Bold";
+  font-size: 18px;
+  font-weight: 400;
+  padding: 29px 48px;
+  margin-bottom: 98px; }

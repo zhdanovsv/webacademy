@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: 'Roboto Slab';
+  background-color: #caf0f3; }
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px; }
+  .main::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .main-text {
+    padding-right: 208px; }
+    .main-text__title {
+      color: #7c6db0;
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 59px;
+      margin-top: 89px;
+      transform: translate(138px, -21px); }
+    .main-text .button {
+      margin-top: 43px;
+      margin-bottom: 74px;
+      background-color: #7f70b1;
+      border: none;
+      padding: 7px 19px 15px 21px;
+      transform: translate(142px, -27px); }
+      .main-text .button span {
+        font-family: 'Roboto Slab';
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 700; }
+    .main-text__subtitle {
+      padding-bottom: 118px;
+      padding-left: 149px;
+      transform: translateY(-7px); }
+      .main-text__subtitle img {
+        float: left;
+        margin-right: 37px; }
+      .main-text__subtitle::after {
+        content: '';
+        display: table;
+        clear: both; }
+    .main-text__desc {
+      font-family: 'Roboto', sans-serif;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 30px;
+      transform: translate(1px, 1px); }
+    .main-text .button-2 {
+      box-shadow: 0 2px 16px rgba(0, 215, 255, 0.44);
+      background-color: #1eb8b0;
+      background-image: linear-gradient(-230deg, #01c4e0 0%, #01b3e0 100%);
+      padding: 21px 47px 25px 57px;
+      border: 2px solid #01BBE0;
+      margin-right: 30px;
+      cursor: pointer;
+      outline: none;
+      transform: translate(142px, -8px); }
+      .main-text .button-2 span {
+        font-family: 'Roboto Slab';
+        font-size: 22px;
+        font-weight: 700;
+        color: #ffffff; }
+    .main-text .button-3 {
+      background: transparent;
+      padding: 22px 73px 25px 73px;
+      box-shadow: 0 2px 16px rgba(0, 215, 255, 0.44);
+      border: 2px solid #01BBE0;
+      font-size: 22px;
+      font-weight: 700;
+      outline: none;
+      cursor: pointer;
+      transform: translate(138px, -8px); }
+      .main-text .button-3 span {
+        font-family: 'Roboto Slab';
+        font-size: 22px;
+        font-weight: 700;
+        color: #01b3e0; }

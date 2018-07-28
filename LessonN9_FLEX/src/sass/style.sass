@@ -1,0 +1,41 @@
+body
+	margin: 0
+	background-color: #f9f9f9
+	color: #000
+	text-align: center
+	margin: 0 auto
+	font-family: "Proxima Nova", sans-serif
+
+@mixin font($size, $weight) 
+	font-size: $size
+	font-weight: $weight
+
+.container
+	padding-top: 100px
+h2
+	@include font(36px, 400)
+	margin: 0
+	padding-bottom: 60px
+
+.wrap		
+	display: flex
+	justify-content: center
+	.box
+		margin-right: 73px
+		&:last-child
+			margin-right: 0
+		p
+			@include font(16px, 300)
+		.box-desc
+			@include font(18px, 700)
+
+.button
+	margin: 25px 0 101px
+	padding: 23px 74px
+	background-color: #fff
+	border: 1px solid #23bac1
+	color: #23bac1
+	@include font(13px, 700)
+	text-transform: uppercase
+	cursor: pointer
+	outline: none
