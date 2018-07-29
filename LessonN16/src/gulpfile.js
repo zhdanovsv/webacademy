@@ -43,7 +43,7 @@ gulp.task( 'deploy', function () {
 	// turn off buffering in gulp.src for best performance
 
 	return gulp.src( globs, { base: '.', buffer: false } )
-		.pipe( conn.newer( '/www/zhdanovsv.ru/newblanc/src' ) ) // only upload newer files
-		.pipe( conn.dest( '/www/zhdanovsv.ru/newblanc/src' ) );
+		.pipe( conn.newer( '/www/zhdanovsv.ru/lessonN16/src' ) ) // only upload newer files
+		.pipe( conn.dest( '/www/zhdanovsv.ru/lessonN16/src' ) );
 
 } );
