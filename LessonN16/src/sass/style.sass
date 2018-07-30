@@ -4,9 +4,6 @@
 @font-face 
 	font-family: "Roboto Black"
 	src: url('../fonts/Roboto-Black.ttf')
-@font-face 
-	font-family: "Roboto Ligth"
-	src: url('../fonts/Roboto-Light.ttf')
 
 @media (min-width: 1200px)
 	.container
@@ -15,7 +12,7 @@
 $bgbtn: #ffa311
 $text-color: #373737
 
-// @import 'main'
+
 
 input, img
 	outline: none
@@ -49,42 +46,42 @@ body
 			color: $text-color
 			&:hover
 				color: ($bgbtn)-50%
-		.num1
-			border-right: 1px solid #cfcfd0
-			padding-right: 15px
+
+	.num1
+		border-right: 1px solid #cfcfd0
+		padding-right: 15px
 	
-	
-	
-	.button
-		display: inline-block
-		font-family: "Roboto Regular", sans-serif
-		background: $bgbtn
-		color: #ffffff
-		border: 0
-		border-radius: 5px
-		margin-left: 27px
-		font-size: 14px
-		cursor: pointer
-		outline: none
-		&:hover
-			background-color: ($bgbtn)-30%
-			box-shadow: 0 9px 21px rgba(0, 0, 0, 0.05);
-			-webkit-user-select: none
-			-moz-user-select: none
-			-ms-user-select: none
-			user-select: none
-		img
-			padding: 12px 7px 12px 10px
-			vertical-align: middle
-		span
-			padding-right: 10px
+.button
+	display: inline-block
+	font-family: "Roboto Regular", sans-serif
+	background: $bgbtn
+	color: #ffffff
+	border: 0
+	border-radius: 5px
+	margin-left: 27px
+	font-size: 14px
+	cursor: pointer
+	outline: none
+	&:hover
+		background-color: ($bgbtn)-30%
+		box-shadow: 0 9px 21px rgba(0, 0, 0, 0.05);
+		-webkit-user-select: none
+		-moz-user-select: none
+		-ms-user-select: none
+		user-select: none
+	img
+		padding: 12px 7px 12px 10px
+		vertical-align: middle
+		max-width: 100%
+	span
+		padding-right: 10px
 
 .main
 	// border: 1px solid #000	
 	padding-top: 65px
 	padding-bottom: 60px
-
-	background: #555 url("../img/main/main-bg.jpg") center no-repeat / cover
+	background: #555 url("../img/main/main-bg.jpg") center no-repeat
+	background-size: cover
 	position: relative
 	z-index: 2
 	color: #fff
@@ -100,30 +97,28 @@ body
 		z-index: 0
 	&-img
 		position: relative
-		// width: 110%
-		// width: 100%
-		
 		&::before
 			position: absolute
 			z-index: -1
 			content: ''
-			width: 310px
-			height: 310px
+			width: 390px
+			height: 390px
 			border: 1px solid #fff
 			border-radius: 50%
 			left: 50%
-			margin-left: -115px
-			margin-top: 10px
+			margin-left: -195px
 		&::after
 			z-index: 0
-			background: url("../img/main/sert.png") no-repeat
+			background: url(../img/main/sert.png) no-repeat
 			position: absolute
 			display: block
 			content: ''
 			width: 60px
 			height: 60px
-			top: 88%
-			left: 18%
+			top: 85%
+			left: 15%
+	// .container
+		// padding-top: 65px
 	&-text
 		&__title
 			font-size: 41px
@@ -143,7 +138,7 @@ body
 				font-size: 20px
 				font-weight: 300
 				line-height: 30px
-				padding-right: 40px
+				padding-right: 50px
 			.form-main
 				display: flex
 				justify-content: space-between
@@ -171,3 +166,83 @@ body
 	font-weight: 700
 	text-transform: uppercase
 
+.overlay
+	display: none
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	z-index: 3
+	background: rgba(0, 0, 0, 0.4)
+	// opacity: 0.5
+	.popup
+		position: fixed
+		margin-top: 100px
+		// margin-bottom: 100px
+		width: 752px
+		left: 50%
+		transform: translateX(-50%)
+		z-index: 4
+		&-close
+			position: absolute
+			right: -20px
+			top: -34px
+			cursor: pointer
+			color: #fff
+			font-size: 35px
+		&-title
+			display: block
+			width: 100%
+			min-height: 71px
+			margin: 0
+			background-color: #ff9d00
+			color: #fff
+			text-transform: uppercase
+			line-height: 71px
+			font-size: 21px
+			font-weight: 500
+			text-align: center
+		&-form
+			background: url("../img/modal/modal-bg.jpg") center no-repeat
+			background-size: cover
+			padding: 35px 88px 50px
+			color: #fff
+			&-title
+				padding: 0
+				font-size: 30px
+				font-weight: 400
+				line-height: 27px
+				text-align: center
+				span
+					font-size: 24px
+			&-label
+				display: block
+				margin-top: 23px
+				margin-bottom: 17px
+				font-size: 20px
+				font-weight: 300
+			&-input
+				width: 365px
+				height: 56px
+				font-size: 14px
+				font-weight: 300
+				padding: 21px 180px 21px 18px
+				border-radius: 5px
+				border: none
+				color: #373737
+
+			&-btn
+				width: 180px
+				height: 56px
+				// padding: 19px 29px
+				margin-left: 16px
+				font-size: 15px
+				font-weight: 500
+				border: none
+			&-small
+				margin-top: 9px
+				// margin-bottom: 49px
+				font-size: 14px
+				font-weight: 300
+				line-height: 30px
+				// line-height: 22px
