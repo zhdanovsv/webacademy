@@ -3,9 +3,8 @@
 	font-family: "Roboto Regular", sans-serif
 	background: $bgbtn
 	color: #ffffff
-	border: 0
+	border: 1px solid transparent
 	border-radius: 5px
-	margin-left: 27px
 	font-size: 14px
 	cursor: pointer
 	outline: none
@@ -22,3 +21,27 @@
 		max-width: 100%
 	span
 		padding-right: 10px
+	&-o
+		background: transparent
+		border: 1px solid rgba(#373737, 0.5)
+		color: rgba(#373737, 0.5)
+		&:hover
+			background: transparent
+			border: 1px solid #373737
+			color: #373737
+
+.section
+	&-title
+		color: #313131
+		font-size: 27px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: center
+		&::after
+			content: ''
+			display: block
+			margin-top: 12px
+			margin-bottom: 21px
+			background: url("../img/line-title.png") no-repeat center
+			height: 6px
+			text-align: center
