@@ -1,0 +1,22 @@
+.anime
+	// Имя keyframes
+	// Длительность анимации duration
+	// Длительноть паузы перед анимацией delay
+	// animation-timing-function: linear плавный тип анимации
+
+	animation: move 1s 0.8s linear, rotate 1s 3s linear
+
+@keyframes move
+	from
+		opacity: 0
+		margin-bottom: -100px
+	to
+		opacity: 1
+		margin-bottom: 0
+
+@keyframes rotate
+	from
+		transform: rotate3d(0, 0, 0, 0deg)
+	to
+		transform: rotate3d(0, 360, 0, 360deg)
+	
